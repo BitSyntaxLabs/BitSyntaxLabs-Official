@@ -1,0 +1,64 @@
+<nav id="navbar" class="fixed top-0 left-0 w-full bg-brightOrange shadow-md transition-all duration-300 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/BitSyntaxLabs-Official/index.html" class="flex items-center">
+                <img src="/BitSyntaxLabs-Official/public/assets/images/IMG_20250129_031220-removebg-preview.png"
+                    class="h-24 w-24" alt="BitSyntax Labs Logo">
+            </a>
+
+            <!-- Navbar Links -->
+            <div class="hidden md:flex space-x-6 text-dnavyBlue font-semibold">
+                <a href="/BitSyntaxLabs-Official/index.html"
+                    class="relative group transition ease-in-out duration-300">
+                    Home
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-dnavyBlue transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/BitSyntaxLabs-Official/public/html/service.html"
+                    class="relative group transition ease-in-out duration-300">
+                    Services
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-dnavyBlue transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/BitSyntaxLabs-Official"
+                    class="relative group transition ease-in-out duration-300">
+                    About
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-dnavyBlue transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="/BitSyntaxLabs-Official/public/html/contact.html"
+                    class="relative group transition ease-in-out duration-300">
+                    Contact
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-dnavyBlue transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default, slides in from the right) -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-dnavyBlue shadow-md transform translate-x-full transition-transform duration-300 ease-in-out opacity-0">
+        <button id="close-menu-btn" class="absolute top-4 right-4 text-white">
+        ✖
+        </button>
+        <div class="mt-16 space-y-4">
+            <a href="/BitSyntaxLabs-Official/index.html"
+                class="block py-2 px-4 text-white hover:underline hover:decoration-2">Home</a>
+            <a href="/BitSyntaxLabs-Official/public/html/service.html"
+                class="block py-2 px-4 text-white hover:underline hover:decoration-2">Services</a>
+            <a href="/BitSyntaxLabs-Official/public/html/about.html"
+                class="block py-2 px-4 text-white hover:underline hover:decoration-2">About</a>
+            <a href="/BitSyntaxLabs-Official/public/html/contact.html"
+                class="block py-2 px-4 text-white hover:underline hover:decoration-2">Contact</a>
+        </div>
+    </div>
+</nav>

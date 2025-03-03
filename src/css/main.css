@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/*Add your custom CSS here*/
+@theme {
+    --color-brightOrange: #e15926;
+    --color-dnavyBlue: #15243b;
+    --color-tealBlue: #44a7c3; 
+    --color-dGray: #3b3f4b;
+    --color-lgrayBlue: #7c8289;
+}
