@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Source code of DkU Works Organization Website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitSyntaxLabs/BitSyntaxLabs-Official.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BitSyntaxLabs/BitSyntaxLabs-Official/issues"
+  },
+  "homepage": "https://github.com/BitSyntaxLabs/BitSyntaxLabs-Official#readme"
 }
