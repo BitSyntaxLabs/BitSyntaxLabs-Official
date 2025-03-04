@@ -13,8 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const script = document.createElement("script");
       script.textContent = scriptContent; // Inject menu.js inline
       document.body.appendChild(script);
+
+      return fetch("./src/js/scroll.js");	// Fetch and inject scroll.js after menu.js is loaded
     })
-    .catch((error) => console.error("Error loading navbar or menu.js:", error));
+    .then((response) => response.text())
+    .then((scriptContent) => {
+      const script = document.createElement("script");
+      script.textContent = scriptContent; // Inject scroll.js inline
+      document.body.appendChild(script);
+    })
+    .catch((error) => console.error("Error loading scripts:", error));
 
   // Load Footer
   fetch("./src/components/footer.html")
@@ -22,5 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       document.getElementById("footer-placeholder").innerHTML = data;
     })
-    .catch((error) => console.error("Error loading footer:", error));
 });

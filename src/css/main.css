@@ -7,4 +7,65 @@
     --color-tealBlue: #44a7c3; 
     --color-dGray: #3b3f4b;
     --color-lgrayBlue: #7c8289;
+    --font-exo2: 'Exo 2', sans-serif;
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 36ch;
+        }
+    }  
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }    
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    
+}
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #333;
+    width: 0;
+    animation: typewriter 3s steps(30, end) forwards, blink 0.6s infinite;
+    max-width: 100%;
+}
+@media (max-width: 640px) {
+    .typing {
+      font-size: 0.9rem;
+      max-width: 90vw; 
+      overflow: hidden;
+      white-space: nowrap;
+    }
+}
+.fadeIn {
+    animation: fadeIn 2s ease-out forwards;
+}
+.slideIn {
+    opacity: 0;
+    transform: translateX(-150px);
+}
+.slideInActive {
+    animation: slideIn 0.8s ease-out forwards;
 }
