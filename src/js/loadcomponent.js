@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const script = document.createElement("script");
       script.textContent = scriptContent; // Inject scroll.js inline
       document.body.appendChild(script);
+
+      return fetch("./src/js/smoothscroll.js");	// Fetch and inject smoothscroll.js after scroll.js is loaded
+    })
+    .then((response) => response.text())
+    .then((scriptContent) => {
+      const script = document.createElement("script");
+      script.textContent = scriptContent; // Inject smoothscroll.js inline
+      document.body.appendChild(script);
     })
     .catch((error) => console.error("Error loading scripts:", error));
 

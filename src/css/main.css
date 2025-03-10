@@ -13,7 +13,7 @@
             width: 0;
         }
         to {
-            width: 36ch;
+            width: 40ch;
         }
     }  
     @keyframes blink {
