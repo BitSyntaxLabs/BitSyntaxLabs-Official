@@ -384,7 +384,18 @@
             <textarea name="message" rows="4" placeholder="Write your message here..." 
               class="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300"></textarea>
           </div>
-          <div data-netlify-recaptcha="true" class="hcaptcha w-full md:justify-center md:items-center"></div>
+          
+          <div class="flex w-full md:justify-center md:items-center">
+            <div data-netlify-recaptcha="true" 
+                 class="hcaptcha w-full max-w-sm">
+            </div>
+          </div>
+        
+        <button type="submit" 
+                class="w-full max-w-sm bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded transition duration-300 cursor-pointer">
+                Send Message
+        </button>
+        
           <button type="submit" 
             class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded transition duration-300 cursor-pointer">
             Send Message
