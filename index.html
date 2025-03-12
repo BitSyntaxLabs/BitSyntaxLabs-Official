@@ -6,7 +6,7 @@
     <title>BitSyntax Labs</title>
     <link rel="stylesheet" href="./css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body class="bg-lgrayBlue/30 font-exo2">
 
@@ -392,12 +392,9 @@
 
           <!-- hCaptcha Widget -->
           <div class="mb-4 flex justify-center">
-            <div class="g-recaptcha" data-sitekey="6LdljvIqAAAAAF-bI-ZeO__ZS2s1JG2ch_jrBJ79"></div>
+            <div class="h-captcha" data-sitekey="c26a96da-05e4-4612-8600-8d8a0e9a9c62"></div>
           </div>
 
-          <!-- Hidden reCAPTCHA Response Field (Using Tailwind Instead of CSS) -->
-          <textarea id="g-recaptcha-response" class="hidden absolute -mt-12 opacity-0 z-[-999999]" name="g-recaptcha-response"></textarea>
-        
           <button type="submit" 
             class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded transition duration-300 cursor-pointer">
             Send Message
@@ -432,10 +429,5 @@
 
     <!-- Load Components Script -->
     <script src="./js/loadcomponent.js"></script>
-
-    <!-- NoScript Message -->
-    <noscript>
-      <p class="text-center text-red-500 font-semibold">JavaScript is required for reCAPTCHA to work. Please enable it.</p>
-    </noscript>
 </body>
 </html>
