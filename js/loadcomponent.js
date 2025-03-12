@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const script = document.createElement("script");
       script.textContent = scriptContent; // Inject smoothscroll.js inline
       document.body.appendChild(script);
+
+      return fetch("./js/captcha.js");	// Fetch and inject captcha.js after smoothscroll.js is loaded
+    })
+    .then((response) => response.text())
+    .then((scriptContent) => {
+      const script = document.createElement("script");
+      script.textContent = scriptContent; // Inject captcha.js inline
+      document.body.appendChild(script);
     })
     .catch((error) => console.error("Error loading scripts:", error));
 
