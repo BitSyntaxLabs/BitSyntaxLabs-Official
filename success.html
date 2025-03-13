@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/output.css">
     <title>Form Submitted Successfully | BitSyntax Labs</title>
 </head>
-<body class="flex flex-col items-center justify-center h-screen">
-    <p class="text-brightOrange font-exo2 font-bold">Successfully Submitted</p>
-    <p class="text-gray-800 font-exo2 italic">Your Form has been submitted successfully. You can close this window.</p>
+<body class="bg-white flex items-center justify-center min-h-screen p-6 font-exo2">
+    <div class="bg-brightOrange p-10 rounded-lg shadow-lg text-center">
+        <div class="flex items-center justify-center w-32 h-32 bg-gray-800 rounded-full mx-auto">
+            <svg class="w-16 h-16 text-brightOrange" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+            </svg>
+        </div>
+        <h1 class="text-4xl font-extrabold text-gray-800 mt-5">Success</h1>
+        <p class="text-gray-400 text-lg mt-3">We received your purchase request;<br> we'll be in touch shortly!</p>
+    </div>
 </body>
 </html>
