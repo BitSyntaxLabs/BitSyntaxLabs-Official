@@ -37,6 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const script = document.createElement("script");
       script.textContent = scriptContent; // Inject captcha.js inline
       document.body.appendChild(script);
+
+      return fetch("./js/formredirect.js");	// Fetch and inject formredirect.js after captcha.js is loaded
+    })
+    .then((response) => response.text())
+    .then((scriptContent) => {
+      const script = document.createElement("script");
+      script.textContent = scriptContent; // Inject formredirect.js inline
+      document.body.appendChild(script);
     })
     .catch((error) => console.error("Error loading scripts:", error));
 
