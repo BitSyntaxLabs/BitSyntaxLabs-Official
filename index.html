@@ -369,9 +369,6 @@
       <div class="max-w-sm md:max-w-2xl mx-auto mt-8 p-6 bg-gray-800 rounded-lg shadow-lg slideIn">
         <form action="https://formspree.io/f/mjkyvleo" method="POST">
 
-          <!-- Success Redirect -->
-          <input type="hidden" name="_next" value="./success.html">
-
           <div class="mb-4">
             <label class="block text-gray-300 font-semibold mb-2">Name</label>
             <input type="text" name="name" placeholder="Enter your name" required 
@@ -394,6 +391,9 @@
           <div class="mb-4 flex justify-center">
             <div class="h-captcha" data-sitekey="c26a96da-05e4-4612-8600-8d8a0e9a9c62"></div>
           </div>
+
+          <!-- Success Redirect -->
+          <input type="hidden" name="_next" value="https://bitsyntaxlabs.com/success.html">
 
           <button type="submit" 
             class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded transition duration-300 cursor-pointer">
