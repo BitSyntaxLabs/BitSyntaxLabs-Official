@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "https://bitsyntaxlabs.netlify.app/*"
+  to = "https://bitsyntaxlabs.ra3.us/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bitsyntaxlabs.ra3.us/*"
+  to = "https://bitsyntaxlabs.ra3.us/:splat"
+  status = 301
+  force = true
