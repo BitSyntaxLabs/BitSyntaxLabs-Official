@@ -11,7 +11,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     }).then(response => {
         if (response.ok) {
             // Redirect to success page
-            window.location.href = "https://bitsyntaxlabs.ra3.us/success.html";
+            window.location.href = "https://bitsyntaxlabs.3cm.us/success.html";
         } else {
             alert("Error submitting form. Please try again.");
         }
